@@ -1,0 +1,300 @@
+{
+  "assumptions": [
+    {
+      "kelompok": "Radar",
+      "parameter": "Bobot kategori POI (kantor, kampus, sekolah, stasiun, mal)",
+      "nilai": "0,40 / 0,20 / 0,10 / 0,15 / 0,15",
+      "jenis": "Asumsi",
+      "dasar": "Proporsi pekerjaan nasabah (42% karyawan, 22% pelajar/mahasiswa) + bobot lalu lintas orang",
+      "dipakai_di": "Bagian C, uji Dirichlet 500 kali"
+    },
+    {
+      "kelompok": "Radar",
+      "parameter": "QAC dasar per squad-minggu",
+      "nilai": "90 x (0,45 + 0,9 x skor)",
+      "jenis": "Asumsi",
+      "dasar": "Squad 4 sales x 5 hari x 15 akun x tingkat QAC sekitar 30-40%",
+      "dipakai_di": "Bagian D"
+    },
+    {
+      "kelompok": "Radar",
+      "parameter": "Efek konteks minggu gajian dan ujian",
+      "nilai": "kantor x1,30; mal x1,15; kampus x0,60; sekolah x0,75",
+      "jenis": "Asumsi",
+      "dasar": "Pola kalender gajian dan akademik; agen hanya tahu perkiraan kasarnya",
+      "dipakai_di": "Bagian D"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Saldo rata-rata state Dorman",
+      "nilai": "Rp50,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Titik tengah rentang tier bluLoyalty (Data Kasus)",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Saldo rata-rata state Newbie",
+      "nilai": "Rp500,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Titik tengah rentang tier bluLoyalty (Data Kasus)",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Saldo rata-rata state Pro",
+      "nilai": "Rp4,0 jt",
+      "jenis": "Asumsi",
+      "dasar": "Titik tengah rentang tier bluLoyalty (Data Kasus)",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Saldo rata-rata state Grande",
+      "nilai": "Rp22,0 jt",
+      "jenis": "Asumsi",
+      "dasar": "Titik tengah rentang tier bluLoyalty (Data Kasus)",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Saldo rata-rata state Elite",
+      "nilai": "Rp90,0 jt",
+      "jenis": "Asumsi",
+      "dasar": "Titik tengah rentang tier bluLoyalty (Data Kasus)",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Margin dana per tahun",
+      "nilai": "NIM 7,05% x LDR 57,0% = 4,02%",
+      "jenis": "Data Kasus + penyederhanaan",
+      "dasar": "NIM dan rasio kredit/DPK Juni 2026; hanya dana tersalurkan yang menghasilkan margin",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Komisi per nasabah aktif per tahun",
+      "nilai": "Rp35,5 rb",
+      "jenis": "Data Kasus",
+      "dasar": "Komisi H1 2026 x 2 / jumlah nasabah",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Biaya layanan per bulan (aktif / dorman)",
+      "nilai": "Rp3.000 / Rp500",
+      "jenis": "Asumsi",
+      "dasar": "Biaya operasional digital per akun",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Matriks transisi tier bulanan",
+      "nilai": "Lihat tabel A11",
+      "jenis": "Asumsi",
+      "dasar": "bluRadar hanya memperbaiki Dorman, Newbie, Pro",
+      "dipakai_di": "Bagian E, uji Dirichlet 2.000 kali"
+    },
+    {
+      "kelompok": "Nilai nasabah",
+      "parameter": "Tingkat diskonto",
+      "nilai": "10% per tahun",
+      "jenis": "Asumsi",
+      "dasar": "Proksi biaya modal",
+      "dipakai_di": "Bagian E, H"
+    },
+    {
+      "kelompok": "QUEST",
+      "parameter": "Biaya komunikasi per nudge",
+      "nilai": "Rp1,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Push notification, WhatsApp resmi, in-app",
+      "dipakai_di": "Bagian F"
+    },
+    {
+      "kelompok": "QUEST",
+      "parameter": "Reward porsi blu per misi selesai",
+      "nilai": "Rp10,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Sisa reward didanai mitra; dibayar hanya bila misi selesai",
+      "dipakai_di": "Bagian F"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Median ukuran grup",
+      "nilai": "15 anggota (maks 99)",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Porsi anggota belum punya akun blu",
+      "nilai": "rata-rata 70%",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Peluang anggota membuka akun",
+      "nilai": "rata-rata 45%",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Peluang anggota menjadi Creator baru",
+      "nilai": "6% x 30%",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Pitch individu",
+      "nilai": "10 menit, konversi 25%",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "ANCHOR",
+      "parameter": "Pitch bendahara",
+      "nilai": "45 menit, konversi 35%",
+      "jenis": "Asumsi",
+      "dasar": "Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot",
+      "dipakai_di": "Bagian G"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "sales",
+      "nilai": "30 orang",
+      "jenis": "Asumsi",
+      "dasar": "Ukuran squad pilot Jabodetabek",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "hari",
+      "nilai": "60 hari kerja",
+      "jenis": "Asumsi",
+      "dasar": "12 minggu",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "akun_per_hari",
+      "nilai": "15 akun per sales per hari",
+      "jenis": "Asumsi",
+      "dasar": "Produktivitas booth",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "biaya_sales_bulan",
+      "nilai": "Rp6,0 jt",
+      "jenis": "Asumsi",
+      "dasar": "Gaji dan operasional per sales",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "qac_base",
+      "nilai": "30%",
+      "jenis": "Asumsi",
+      "dasar": "Asumsi tingkat aktif akun hasil promo",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "insentif_base",
+      "nilai": "Rp50,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Setara kampanye 50K + kuota di casebook",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "qac_radar",
+      "nilai": "50%",
+      "jenis": "Asumsi",
+      "dasar": "Target pilot, divalidasi A/B",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "volume_radar",
+      "nilai": "100% (MC: 75-105%)",
+      "jenis": "Asumsi",
+      "dasar": "Risiko akun turun tanpa promo besar",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "insentif_radar",
+      "nilai": "Rp15,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Porsi blu; sisa reward didanai mitra",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "bonus_qac",
+      "nilai": "Rp10,0 rb",
+      "jenis": "Asumsi",
+      "dasar": "Bonus sales per QAC",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Pilot",
+      "parameter": "teknologi",
+      "nilai": "Rp400,0 jt",
+      "jenis": "Asumsi",
+      "dasar": "Tim data dan pengembangan 3 bulan",
+      "dipakai_di": "Bagian H"
+    },
+    {
+      "kelompok": "Proyeksi",
+      "parameter": "Akun baru program offline per tahun",
+      "nilai": "120 rb / 240 rb / 360 rb",
+      "jenis": "Asumsi",
+      "dasar": "Ekspansi Jabodetabek, Jabar, Jatim",
+      "dipakai_di": "Bagian H.3"
+    },
+    {
+      "kelompok": "Proyeksi",
+      "parameter": "Investasi awal teknologi (bulan 0)",
+      "nilai": "Rp1,5 M",
+      "jenis": "Asumsi",
+      "dasar": "Pembangunan pipeline data, model, aplikasi lapangan",
+      "dipakai_di": "Bagian H.3"
+    },
+    {
+      "kelompok": "Proyeksi",
+      "parameter": "Biaya operasional teknologi per tahun",
+      "nilai": "Rp1,2 M",
+      "jenis": "Asumsi",
+      "dasar": "Tim data, engineering, infrastruktur",
+      "dipakai_di": "Bagian H.3"
+    },
+    {
+      "kelompok": "Proyeksi",
+      "parameter": "Skenario QAC dan volume",
+      "nilai": "40%/85%, 50%/100%, 58%/105%",
+      "jenis": "Asumsi",
+      "dasar": "Konservatif, dasar, optimis",
+      "dipakai_di": "Bagian H.3"
+    },
+    {
+      "kelompok": "Evaluasi",
+      "parameter": "ICC antar akun dalam satu lokasi-minggu",
+      "nilai": "0,03",
+      "jenis": "Asumsi",
+      "dasar": "Kisaran umum eksperimen klaster",
+      "dipakai_di": "Bagian I"
+    }
+  ]
+}

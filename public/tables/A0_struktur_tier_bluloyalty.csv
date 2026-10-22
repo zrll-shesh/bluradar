@@ -1,0 +1,6 @@
+tier,saldo_rata2_portofolio,gratis_transfer_bank_lain_per_bulan,gratis_tarik_setor_atm_bca,gratis_topup_emoney
+bluNewbie,Rp0 - Rp1 jt,10,1,0
+bluPro,Rp1 jt - Rp10 jt,20,2,10
+bluGrande,Rp10 jt - Rp50 jt,50,5,10
+bluElite,> Rp50 jt,100,10,10
+bluRoyal,> Rp500 jt,100,10,10

@@ -1,0 +1,213 @@
+{
+  "weights": {
+    "kantor": 0.4,
+    "kampus": 0.2,
+    "sekolah": 0.1,
+    "stasiun": 0.15,
+    "mal": 0.15
+  },
+  "h3_resolution": 8,
+  "top20": [
+    {
+      "rank": 1,
+      "hex": "888c107125fffff",
+      "score": 100.0,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.994,
+      "lat": -6.305104,
+      "lon": 106.867774,
+      "lokasi": "Telkom Pasar Rebo; KPP Pratama Jakarta Pasar Rebo; Kantor RW 05"
+    },
+    {
+      "rank": 2,
+      "hex": "888c106341fffff",
+      "score": 95.815177,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.996,
+      "lat": -6.293745,
+      "lon": 106.788224,
+      "lokasi": "Pevent Group; Branz Simatupang Marketing Gallery; LogID"
+    },
+    {
+      "rank": 3,
+      "hex": "888c107ad7fffff",
+      "score": 88.260502,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.998,
+      "lat": -6.295522,
+      "lon": 106.822057,
+      "lokasi": "childFund Indonesia; Indosat M2; Kementerian Pertanian"
+    },
+    {
+      "rank": 4,
+      "hex": "888c107a87fffff",
+      "score": 87.591842,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.63,
+      "lat": -6.274306,
+      "lon": 106.828652,
+      "lokasi": "Graha Al Badegel; Gedung Philips; Suku Dinas Lingkungan Hidup Jakarta Selatan"
+    },
+    {
+      "rank": 5,
+      "hex": "888c107111fffff",
+      "score": 86.861394,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 1.0,
+      "lat": -6.339269,
+      "lon": 106.834237,
+      "lokasi": "Kesekretariatan RW 019; Balai Warga RW 17; Kesekretariatan RW 01 Srengseng Sawah"
+    },
+    {
+      "rank": 6,
+      "hex": "888c107a15fffff",
+      "score": 84.637042,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.766,
+      "lat": -6.283893,
+      "lon": 106.87437,
+      "lokasi": "UPPD Kramat Jati; Abang Express - Pengiriman Internasional; PT Blue Bird"
+    },
+    {
+      "rank": 7,
+      "hex": "888c107137fffff",
+      "score": 81.843165,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.702,
+      "lat": -6.310698,
+      "lon": 106.837392,
+      "lokasi": "PT. Interteknis Suryaterang Operations Office; Balai Pendidikan dan Pelatihan Koperasi, Usaha Mikro, Kecil, dan Menengah, dan Perdagangan; Sekolah Partai DPP PDI Perjuangan"
+    },
+    {
+      "rank": 8,
+      "hex": "888c104493fffff",
+      "score": 80.711466,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 1.0,
+      "lat": -6.341919,
+      "lon": 106.884959,
+      "lokasi": "Balai Monitor Spektrum Frekuensi Radio Kelas I Jakarta; Kantor Yayasan; UPT Kebun Bibit Kelapa Dua Wetan"
+    },
+    {
+      "rank": 9,
+      "hex": "888c107a8dfffff",
+      "score": 80.385767,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.392,
+      "lat": -6.282119,
+      "lon": 106.840548,
+      "lokasi": "Kantor Lurah Pasar Minggu; Kementerian Pertanian Direktorat Jenderal Tanaman Pangan; Departemen Pertanian Tanaman Pangan"
+    },
+    {
+      "rank": 10,
+      "hex": "888c107009fffff",
+      "score": 79.101615,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.952,
+      "lat": -6.389029,
+      "lon": 106.82449,
+      "lokasi": "Ruko Graha Depok Mas; Redaksi Majalah KA; Plaza Depok"
+    },
+    {
+      "rank": 11,
+      "hex": "888c10716dfffff",
+      "score": 78.647315,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.904,
+      "lat": -6.327637,
+      "lon": 106.886539,
+      "lokasi": "PT Adhi Commuter Properti; Kantor Camat Cipayung; Sekretariat RW 05"
+    },
+    {
+      "rank": 12,
+      "hex": "888c106369fffff",
+      "score": 78.151881,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.992,
+      "lat": -6.279897,
+      "lon": 106.79826,
+      "lokasi": "SPSI; Kompas Sirkulasi; Balai RW 011"
+    },
+    {
+      "rank": 13,
+      "hex": "888c107ac9fffff",
+      "score": 76.097384,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.736,
+      "lat": -6.304218,
+      "lon": 106.850865,
+      "lokasi": "Astra Credit Companies; Akasha International; Lembaga Penjamin Mutu Pendidikan DKI Jakarta"
+    },
+    {
+      "rank": 14,
+      "hex": "888c107109fffff",
+      "score": 72.960686,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.988,
+      "lat": -6.340595,
+      "lon": 106.859601,
+      "lokasi": "Kantor Lurah Pekayon; KUA Pasar Rebo; Kantor Sekretariat RW 01"
+    },
+    {
+      "rank": 15,
+      "hex": "888c106309fffff",
+      "score": 71.694122,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.81,
+      "lat": -6.285931,
+      "lon": 106.776323,
+      "lokasi": "Puslitbang PU Pasar Jumat; Jasa Site Plan; Balai Besar Pelaksanaan Jalan Nasional VI Kementrian PU"
+    },
+    {
+      "rank": 16,
+      "hex": "888c107a5bfffff",
+      "score": 71.033266,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.632,
+      "lat": -6.312911,
+      "lon": 106.879665,
+      "lokasi": "Bangunan; Sekretariat RW 06; Sekretariat RW 04"
+    },
+    {
+      "rank": 17,
+      "hex": "888c1071a7fffff",
+      "score": 70.603918,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.818,
+      "lat": -6.301557,
+      "lon": 106.800124,
+      "lokasi": "Balai RW 08; Kemenkes RI Balai Besar Pelatihan Kesehatan Jakarta; Balai RW 04"
+    },
+    {
+      "rank": 18,
+      "hex": "888c106267fffff",
+      "score": 67.868437,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.656,
+      "lat": -6.313626,
+      "lon": 106.756252,
+      "lokasi": "Kantor Kelurahan Pisangan; Kementerian Agama RI Pusat Kementerian Agama RI Pendidikan dan Pelatihan; Pegadaian"
+    },
+    {
+      "rank": 19,
+      "hex": "888c107a47fffff",
+      "score": 67.082007,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.642,
+      "lat": -6.292588,
+      "lon": 106.903167,
+      "lokasi": "OmiqloBadut; Kantor Lurah Lubang Buaya; Kantor Sekretariat RW. 02 Kelurahan Lubang Buaya"
+    },
+    {
+      "rank": 20,
+      "hex": "888c1044b1fffff",
+      "score": 66.184818,
+      "kategori_dominan": "kantor",
+      "stabilitas_top20": 0.386,
+      "lat": -6.321158,
+      "lon": 106.900007,
+      "lokasi": "PSMP Handayani; Sekretariat TRC Kementerian Sosial Republik Indonesia; Sekretariat Rumah Perlindungan Sosial Anak"
+    }
+  ],
+  "label_data": "Data Publik (OpenStreetMap) + bobot Asumsi"
+}

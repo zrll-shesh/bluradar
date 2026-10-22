@@ -1,0 +1,104 @@
+{
+  "personas": [
+    {
+      "id": "pekerja_tower",
+      "nama": "Pekerja Tower",
+      "segmen_kasus": "Karyawan swasta (42%), usia 25-34",
+      "kebutuhan": "Gaji cepat habis, ingin menabung otomatis tanpa repot",
+      "pain_point": "Tidak sempat atur keuangan, tergoda belanja",
+      "bundle": [
+        "bluSaving autodebit di hari gajian",
+        "bluGenie untuk receh QRIS"
+      ],
+      "lokasi_temu": "Tower Activity, lobi kantor, area makan siang",
+      "pesan_pitch": "Sisihkan 10% gaji otomatis di hari gajian, receh kopi ikut jadi tabungan",
+      "quiz": {
+        "status": "bekerja",
+        "kas_komunitas": "tidak",
+        "sering_bepergian": "tidak"
+      }
+    },
+    {
+      "id": "mahasiswa_organisatoris",
+      "nama": "Mahasiswa Organisatoris",
+      "segmen_kasus": "Pelajar/mahasiswa (22%), usia < 25",
+      "kebutuhan": "Kas organisasi transparan dan mudah ditagih",
+      "pain_point": "Kas tercampur uang pribadi, laporan manual",
+      "bundle": [
+        "bluGether untuk kas UKM/kelas",
+        "QRIS untuk iuran"
+      ],
+      "lokasi_temu": "Kampus, sekretariat UKM, acara organisasi",
+      "pesan_pitch": "Kas UKM transparan, semua anggota bisa pantau saldo dan mutasi",
+      "quiz": {
+        "status": "kuliah",
+        "kas_komunitas": "ya",
+        "sering_bepergian": "tidak"
+      }
+    },
+    {
+      "id": "perantau",
+      "nama": "Perantau",
+      "segmen_kasus": "Pelajar/mahasiswa dan karyawan muda di luar kota asal",
+      "kebutuhan": "Patungan kos dan kebutuhan bersama, kontrol pengeluaran",
+      "pain_point": "Tagih-menagih patungan, uang receh habis tanpa terasa",
+      "bundle": [
+        "bluGether patungan kos",
+        "bluGenie"
+      ],
+      "lokasi_temu": "Kampus, kawasan kos, stasiun KRL dan MRT",
+      "pesan_pitch": "Patungan kos tanpa drama, receh harian otomatis ditabung",
+      "quiz": {
+        "status": "kuliah",
+        "kas_komunitas": "tidak",
+        "sering_bepergian": "tidak"
+      }
+    },
+    {
+      "id": "traveler",
+      "nama": "Traveler",
+      "segmen_kasus": "Karyawan dengan mobilitas tinggi",
+      "kebutuhan": "Benefit perjalanan dan transaksi luar negeri",
+      "pain_point": "Kurs mahal, benefit kartu tidak terasa",
+      "bundle": [
+        "Garuda x bluDebit Card",
+        "bluValas"
+      ],
+      "lokasi_temu": "Tower perkantoran, mal, event travel",
+      "pesan_pitch": "Setiap belanja jadi GarudaMiles, valas dengan kurs kompetitif dalam satu aplikasi",
+      "quiz": {
+        "status": "bekerja",
+        "kas_komunitas": "tidak",
+        "sering_bepergian": "ya"
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "id": "status",
+      "pertanyaan": "Saat ini kamu lebih banyak bekerja atau kuliah?",
+      "opsi": [
+        "bekerja",
+        "kuliah"
+      ]
+    },
+    {
+      "id": "kas_komunitas",
+      "pertanyaan": "Apakah kamu memegang atau ikut kas bersama (organisasi, kelas, kos, arisan)?",
+      "opsi": [
+        "ya",
+        "tidak"
+      ]
+    },
+    {
+      "id": "sering_bepergian",
+      "pertanyaan": "Apakah kamu naik pesawat lebih dari 3 kali setahun?",
+      "opsi": [
+        "ya",
+        "tidak"
+      ]
+    }
+  ],
+  "rules": "Urutan aturan: sering_bepergian=ya -> Traveler; kas_komunitas=ya -> Mahasiswa Organisatoris (bendahara diprioritaskan); status=bekerja -> Pekerja Tower; selain itu -> Perantau",
+  "label_data": "Konsep (tabel aturan, bukan model)"
+}

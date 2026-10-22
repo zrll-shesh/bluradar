@@ -1,0 +1,38 @@
+kelompok,parameter,nilai,jenis,dasar,dipakai_di
+Radar,"Bobot kategori POI (kantor, kampus, sekolah, stasiun, mal)","0,40 / 0,20 / 0,10 / 0,15 / 0,15",Asumsi,"Proporsi pekerjaan nasabah (42% karyawan, 22% pelajar/mahasiswa) + bobot lalu lintas orang","Bagian C, uji Dirichlet 500 kali"
+Radar,QAC dasar per squad-minggu,"90 x (0,45 + 0,9 x skor)",Asumsi,Squad 4 sales x 5 hari x 15 akun x tingkat QAC sekitar 30-40%,Bagian D
+Radar,Efek konteks minggu gajian dan ujian,"kantor x1,30; mal x1,15; kampus x0,60; sekolah x0,75",Asumsi,Pola kalender gajian dan akademik; agen hanya tahu perkiraan kasarnya,Bagian D
+Nilai nasabah,Saldo rata-rata state Dorman,"Rp50,0 rb",Asumsi,Titik tengah rentang tier bluLoyalty (Data Kasus),"Bagian E, H"
+Nilai nasabah,Saldo rata-rata state Newbie,"Rp500,0 rb",Asumsi,Titik tengah rentang tier bluLoyalty (Data Kasus),"Bagian E, H"
+Nilai nasabah,Saldo rata-rata state Pro,"Rp4,0 jt",Asumsi,Titik tengah rentang tier bluLoyalty (Data Kasus),"Bagian E, H"
+Nilai nasabah,Saldo rata-rata state Grande,"Rp22,0 jt",Asumsi,Titik tengah rentang tier bluLoyalty (Data Kasus),"Bagian E, H"
+Nilai nasabah,Saldo rata-rata state Elite,"Rp90,0 jt",Asumsi,Titik tengah rentang tier bluLoyalty (Data Kasus),"Bagian E, H"
+Nilai nasabah,Margin dana per tahun,"NIM 7,05% x LDR 57,0% = 4,02%",Data Kasus + penyederhanaan,NIM dan rasio kredit/DPK Juni 2026; hanya dana tersalurkan yang menghasilkan margin,"Bagian E, H"
+Nilai nasabah,Komisi per nasabah aktif per tahun,"Rp35,5 rb",Data Kasus,Komisi H1 2026 x 2 / jumlah nasabah,"Bagian E, H"
+Nilai nasabah,Biaya layanan per bulan (aktif / dorman),Rp3.000 / Rp500,Asumsi,Biaya operasional digital per akun,"Bagian E, H"
+Nilai nasabah,Matriks transisi tier bulanan,Lihat tabel A11,Asumsi,"bluRadar hanya memperbaiki Dorman, Newbie, Pro","Bagian E, uji Dirichlet 2.000 kali"
+Nilai nasabah,Tingkat diskonto,10% per tahun,Asumsi,Proksi biaya modal,"Bagian E, H"
+QUEST,Biaya komunikasi per nudge,"Rp1,0 rb",Asumsi,"Push notification, WhatsApp resmi, in-app",Bagian F
+QUEST,Reward porsi blu per misi selesai,"Rp10,0 rb",Asumsi,Sisa reward didanai mitra; dibayar hanya bila misi selesai,Bagian F
+ANCHOR,Median ukuran grup,15 anggota (maks 99),Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+ANCHOR,Porsi anggota belum punya akun blu,rata-rata 70%,Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+ANCHOR,Peluang anggota membuka akun,rata-rata 45%,Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+ANCHOR,Peluang anggota menjadi Creator baru,6% x 30%,Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+ANCHOR,Pitch individu,"10 menit, konversi 25%",Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+ANCHOR,Pitch bendahara,"45 menit, konversi 35%",Asumsi,Perkiraan perilaku komunitas kampus dan kantor; divalidasi di pilot,Bagian G
+Pilot,sales,30 orang,Asumsi,Ukuran squad pilot Jabodetabek,Bagian H
+Pilot,hari,60 hari kerja,Asumsi,12 minggu,Bagian H
+Pilot,akun_per_hari,15 akun per sales per hari,Asumsi,Produktivitas booth,Bagian H
+Pilot,biaya_sales_bulan,"Rp6,0 jt",Asumsi,Gaji dan operasional per sales,Bagian H
+Pilot,qac_base,30%,Asumsi,Asumsi tingkat aktif akun hasil promo,Bagian H
+Pilot,insentif_base,"Rp50,0 rb",Asumsi,Setara kampanye 50K + kuota di casebook,Bagian H
+Pilot,qac_radar,50%,Asumsi,"Target pilot, divalidasi A/B",Bagian H
+Pilot,volume_radar,100% (MC: 75-105%),Asumsi,Risiko akun turun tanpa promo besar,Bagian H
+Pilot,insentif_radar,"Rp15,0 rb",Asumsi,Porsi blu; sisa reward didanai mitra,Bagian H
+Pilot,bonus_qac,"Rp10,0 rb",Asumsi,Bonus sales per QAC,Bagian H
+Pilot,teknologi,"Rp400,0 jt",Asumsi,Tim data dan pengembangan 3 bulan,Bagian H
+Proyeksi,Akun baru program offline per tahun,120 rb / 240 rb / 360 rb,Asumsi,"Ekspansi Jabodetabek, Jabar, Jatim",Bagian H.3
+Proyeksi,Investasi awal teknologi (bulan 0),"Rp1,5 M",Asumsi,"Pembangunan pipeline data, model, aplikasi lapangan",Bagian H.3
+Proyeksi,Biaya operasional teknologi per tahun,"Rp1,2 M",Asumsi,"Tim data, engineering, infrastruktur",Bagian H.3
+Proyeksi,Skenario QAC dan volume,"40%/85%, 50%/100%, 58%/105%",Asumsi,"Konservatif, dasar, optimis",Bagian H.3
+Evaluasi,ICC antar akun dalam satu lokasi-minggu,"0,03",Asumsi,Kisaran umum eksperimen klaster,Bagian I

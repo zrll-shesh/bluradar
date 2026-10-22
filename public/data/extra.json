@@ -1,0 +1,605 @@
+{
+ "case": {
+  "nasabah": 3350000,
+  "saldo_rata2": 4700000,
+  "dpk": 15600000000000.0,
+  "volume_trx": 112000000000000.0,
+  "frekuensi_trx": 166000000.0,
+  "aset_blu": 20810000000000.0,
+  "nim": 0.0705,
+  "ldr": 0.5697084917617238,
+  "periode": "31 Mei 2026",
+  "age": [
+   [
+    "<25",
+    31
+   ],
+   [
+    "25-34",
+    45
+   ],
+   [
+    "35-44",
+    16
+   ],
+   [
+    "45-54",
+    7
+   ],
+   [
+    ">=55",
+    3
+   ]
+  ],
+  "gender": [
+   [
+    "Laki-laki",
+    53
+   ],
+   [
+    "Perempuan",
+    47
+   ]
+  ],
+  "province": [
+   [
+    "Jabodetabek",
+    39
+   ],
+   [
+    "Jawa Barat",
+    18
+   ],
+   [
+    "Jawa Timur",
+    13
+   ],
+   [
+    "Sulawesi Selatan",
+    2
+   ],
+   [
+    "Bali",
+    2
+   ]
+  ],
+  "occupation": [
+   [
+    "Karyawan swasta",
+    42
+   ],
+   [
+    "Pelajar/mahasiswa",
+    22
+   ],
+   [
+    "Mengurus rumah tangga",
+    8
+   ],
+   [
+    "Perdagangan",
+    8
+   ],
+   [
+    "Belum/tidak bekerja",
+    7
+   ]
+  ],
+  "label_data": "Data Kasus"
+ },
+ "derived_metrics": [
+  {
+   "metrik": "DPK per nasabah",
+   "nilai": "Rp4,66 jt",
+   "catatan": "Konsisten dengan saldo rata-rata Rp4,7 jt"
+  },
+  {
+   "metrik": "Frekuensi transaksi per nasabah",
+   "nilai": "49,6 kali",
+   "catatan": "Kumulatif sesuai periode data kasus"
+  },
+  {
+   "metrik": "Nilai rata-rata per transaksi",
+   "nilai": "Rp675 rb",
+   "catatan": "Volume dibagi frekuensi"
+  },
+  {
+   "metrik": "Komisi per nasabah per tahun",
+   "nilai": "Rp35,5 rb",
+   "catatan": "Annualisasi Semester I 2026"
+  },
+  {
+   "metrik": "Pendapatan bunga bersih per nasabah per tahun",
+   "nilai": "Rp420,6 rb",
+   "catatan": "Annualisasi Semester I 2026"
+  },
+  {
+   "metrik": "Rasio kredit terhadap DPK (LDR)",
+   "nilai": "57,0%",
+   "catatan": "Hanya sebagian dana yang tersalurkan ke kredit"
+  },
+  {
+   "metrik": "Porsi komisi terhadap NII + komisi",
+   "nilai": "7,8%",
+   "catatan": "Pendapatan masih bertumpu pada bunga"
+  },
+  {
+   "metrik": "Porsi nasabah usia < 35 tahun",
+   "nilai": "76%",
+   "catatan": "Segmen muda dominan"
+  },
+  {
+   "metrik": "Porsi 3 wilayah teratas",
+   "nilai": "70%",
+   "catatan": "Jabodetabek, Jawa Barat, Jawa Timur"
+  },
+  {
+   "metrik": "Porsi karyawan swasta + pelajar/mahasiswa",
+   "nilai": "64%",
+   "catatan": "Terkumpul di kantor dan kampus"
+  }
+ ],
+ "tiers": [
+  {
+   "tier": "bluNewbie",
+   "saldo_rata2_portofolio": "Rp0 - Rp1 jt",
+   "gratis_transfer_bank_lain_per_bulan": 10.0,
+   "gratis_tarik_setor_atm_bca": 1.0,
+   "gratis_topup_emoney": 0.0
+  },
+  {
+   "tier": "bluPro",
+   "saldo_rata2_portofolio": "Rp1 jt - Rp10 jt",
+   "gratis_transfer_bank_lain_per_bulan": 20.0,
+   "gratis_tarik_setor_atm_bca": 2.0,
+   "gratis_topup_emoney": 10.0
+  },
+  {
+   "tier": "bluGrande",
+   "saldo_rata2_portofolio": "Rp10 jt - Rp50 jt",
+   "gratis_transfer_bank_lain_per_bulan": 50.0,
+   "gratis_tarik_setor_atm_bca": 5.0,
+   "gratis_topup_emoney": 10.0
+  },
+  {
+   "tier": "bluElite",
+   "saldo_rata2_portofolio": "> Rp50 jt",
+   "gratis_transfer_bank_lain_per_bulan": 100.0,
+   "gratis_tarik_setor_atm_bca": 10.0,
+   "gratis_topup_emoney": 10.0
+  },
+  {
+   "tier": "bluRoyal",
+   "saldo_rata2_portofolio": "> Rp500 jt",
+   "gratis_transfer_bank_lain_per_bulan": 100.0,
+   "gratis_tarik_setor_atm_bca": 10.0,
+   "gratis_topup_emoney": 10.0
+  }
+ ],
+ "competitors": [
+  {
+   "bank": "SeaBank",
+   "aset_triliun": 52.97,
+   "induk": "Sea Group (Shopee)",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2021.0
+  },
+  {
+   "bank": "Bank Jago",
+   "aset_triliun": 41.42,
+   "induk": "GoTo",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2021.0
+  },
+  {
+   "bank": "Superbank",
+   "aset_triliun": 27.01,
+   "induk": "Grab, Emtek",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2024.0
+  },
+  {
+   "bank": "blu (BCA Digital)",
+   "aset_triliun": 20.81,
+   "induk": "BCA",
+   "tipe_induk": "Bank induk",
+   "tahun_hadir": 2021.0
+  },
+  {
+   "bank": "Bank Neo Commerce",
+   "aset_triliun": 17.45,
+   "induk": "Akulaku",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2021.0
+  },
+  {
+   "bank": "Bank Saqu",
+   "aset_triliun": 16.03,
+   "induk": "Astra Financial",
+   "tipe_induk": "Konglomerasi",
+   "tahun_hadir": 2023.0
+  },
+  {
+   "bank": "Krom Bank",
+   "aset_triliun": 15.94,
+   "induk": "Kredivo",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2024.0
+  },
+  {
+   "bank": "Allo Bank",
+   "aset_triliun": 15.57,
+   "induk": "CT Corp",
+   "tipe_induk": "Aplikasi konsumen induk",
+   "tahun_hadir": 2022.0
+  }
+ ],
+ "mannwhitney": [
+  {
+   "cakupan": "blu",
+   "aspek": "Promo & cashback",
+   "n_menyebut": 43.0,
+   "rating_menyebut": 4.372093023255814,
+   "rating_tidak": 3.9625649913344887,
+   "selisih": 0.40952803192132503,
+   "p_value": 0.08386245887625682,
+   "rank_biserial": 0.12789488533311832
+  },
+  {
+   "cakupan": "blu",
+   "aspek": "Onboarding & verifikasi",
+   "n_menyebut": 226.0,
+   "rating_menyebut": 1.6814159292035398,
+   "rating_tidak": 4.159881569207994,
+   "selisih": -2.4784656400044542,
+   "p_value": 8.830843216110252e-102,
+   "rank_biserial": -0.7142038345899138
+  },
+  {
+   "cakupan": "blu",
+   "aspek": "Error & performa",
+   "n_menyebut": 295.0,
+   "rating_menyebut": 2.2745762711864406,
+   "rating_tidak": 4.158374477781997,
+   "selisih": -1.8837982065955567,
+   "p_value": 4.039318063785277e-84,
+   "rank_biserial": -0.5745434414568675
+  },
+  {
+   "cakupan": "Semua bank",
+   "aspek": "Promo & cashback",
+   "n_menyebut": 116.0,
+   "rating_menyebut": 4.362068965517241,
+   "rating_tidak": 4.098722415795587,
+   "selisih": 0.2633465497216543,
+   "p_value": 0.06394852168164455,
+   "rank_biserial": 0.07981196683888014
+  },
+  {
+   "cakupan": "Semua bank",
+   "aspek": "Onboarding & verifikasi",
+   "n_menyebut": 429.0,
+   "rating_menyebut": 1.7925407925407926,
+   "rating_tidak": 4.221646378208991,
+   "selisih": -2.4291055856681982,
+   "p_value": 4.073672920898105e-198,
+   "rank_biserial": -0.6853011999450471
+  },
+  {
+   "cakupan": "Semua bank",
+   "aspek": "Error & performa",
+   "n_menyebut": 542.0,
+   "rating_menyebut": 2.407749077490775,
+   "rating_tidak": 4.214442815249267,
+   "selisih": -1.8066937377584922,
+   "p_value": 1.978896248376056e-149,
+   "rank_biserial": -0.5322364220709656
+  }
+ ],
+ "sentiment_validation": {
+  "confusion": [
+   {
+    "index": "bintang_negatif",
+    "model_negatif": 220.0,
+    "model_netral": 13.0,
+    "model_positif": 4.0
+   },
+   {
+    "index": "bintang_netral",
+    "model_negatif": 22.0,
+    "model_netral": 5.0,
+    "model_positif": 6.0
+   },
+   {
+    "index": "bintang_positif",
+    "model_negatif": 150.0,
+    "model_netral": 105.0,
+    "model_positif": 679.0
+   }
+  ],
+  "accuracy": 0.751,
+  "kappa": 0.491,
+  "n": 1204,
+  "model": "w11wo/indonesian-roberta-base-sentiment-classifier"
+ },
+ "bandit_table": [
+  {
+   "strategi": "Acak",
+   "total_qac_rata2": 7491.173684247682,
+   "p2_5": 5838.96315663389,
+   "p97_5": 9505.774710310905,
+   "vs_intuisi": -0.23469538227013753,
+   "porsi_oracle": 0.6568932845937016,
+   "menang_vs_intuisi": 0.01
+  },
+  {
+   "strategi": "Intuisi (skor statis)",
+   "total_qac_rata2": 9788.48619320878,
+   "p2_5": 6950.1775949959,
+   "p97_5": 13446.688461664135,
+   "vs_intuisi": 0.0,
+   "porsi_oracle": 0.8583422461793796,
+   "menang_vs_intuisi": 0.0
+  },
+  {
+   "strategi": "Epsilon-greedy",
+   "total_qac_rata2": 10494.359930110219,
+   "p2_5": 7724.864513120872,
+   "p97_5": 13809.278059069675,
+   "vs_intuisi": 0.07211265592744787,
+   "porsi_oracle": 0.9202395852461059,
+   "menang_vs_intuisi": 0.8933333333333333
+  },
+  {
+   "strategi": "Thompson Sampling kontekstual",
+   "total_qac_rata2": 10733.84171818721,
+   "p2_5": 7862.285864627793,
+   "p97_5": 13831.24408641501,
+   "vs_intuisi": 0.09657831725137589,
+   "porsi_oracle": 0.9412394959411503,
+   "menang_vs_intuisi": 0.8966666666666666
+  },
+  {
+   "strategi": "Oracle",
+   "total_qac_rata2": 11403.943166934772,
+   "p2_5": 8368.407543567004,
+   "p97_5": 14546.433078608745,
+   "vs_intuisi": 0.1650364460693412,
+   "porsi_oracle": 1.0,
+   "menang_vs_intuisi": 0.9966666666666667
+  }
+ ],
+ "uplift_eval": [
+  {
+   "model": "S-learner",
+   "qini_gain": 0.35913610336295215,
+   "capture_top30": 0.4939450830713398,
+   "q_total": 289.450563204005
+  },
+  {
+   "model": "T-learner",
+   "qini_gain": 0.22344647537186366,
+   "capture_top30": 0.4936716339907595,
+   "q_total": 289.450563204005
+  },
+  {
+   "model": "X-learner",
+   "qini_gain": 0.2515491165771129,
+   "capture_top30": 0.4413458429318574,
+   "q_total": 289.450563204005
+  }
+ ],
+ "targeting_table": [
+  {
+   "kebijakan": "Model uplift, top 93%",
+   "nasabah_dinudge": 9299.656464709557,
+   "tambahan_aktivasi": 466.0730856425035,
+   "biaya": 23582883.224962816,
+   "laba_bersih": 41041131.6195158
+  },
+  {
+   "kebijakan": "Nudge semua",
+   "nasabah_dinudge": 10000.0,
+   "tambahan_aktivasi": 451.13865836035706,
+   "biaya": 25134039.900249377,
+   "laba_bersih": 37419221.0644064
+  },
+  {
+   "kebijakan": "Acak, 93%",
+   "nasabah_dinudge": 9299.656464709557,
+   "tambahan_aktivasi": 419.5434540701291,
+   "biaya": 23373793.664262205,
+   "laba_bersih": 34798590.1076003
+  },
+  {
+   "kebijakan": "Anggaran 30%: model uplift",
+   "nasabah_dinudge": 3000.0,
+   "tambahan_aktivasi": 221.80238067028645,
+   "biaya": 8535478.371602653,
+   "laba_bersih": 22218840.60224998
+  },
+  {
+   "kebijakan": "Anggaran 30%: acak",
+   "nasabah_dinudge": 3000.0,
+   "tambahan_aktivasi": 135.3415975081071,
+   "biaya": 7540211.970074813,
+   "laba_bersih": 11225766.319321916
+  }
+ ],
+ "fairness": [
+  {
+   "wilayah": "Rural",
+   "n_test": 1897.0,
+   "tingkat_seleksi": 0.20822351080653664,
+   "uplift_teramati_terpilih_pp": 3.4021996094151516
+  },
+  {
+   "wilayah": "Surburban",
+   "n_test": 5725.0,
+   "tingkat_seleksi": 0.337117903930131,
+   "uplift_teramati_terpilih_pp": 7.9817077361927335
+  },
+  {
+   "wilayah": "Urban",
+   "n_test": 5186.0,
+   "tingkat_seleksi": 0.2927111453914385,
+   "uplift_teramati_terpilih_pp": 7.825335062689148
+  }
+ ],
+ "tornado": [
+  {
+   "faktor": "Biaya sales Rp8 jt - Rp5 jt per bulan",
+   "rendah": 0.518840579710145,
+   "tinggi": 0.5366666666666666,
+   "rentang": 0.01782608695652166
+  },
+  {
+   "faktor": "Bonus per QAC Rp15 rb - Rp5 rb",
+   "rendah": 0.5087301587301587,
+   "tinggi": 0.5515873015873016,
+   "rentang": 0.04285714285714293
+  },
+  {
+   "faktor": "Volume akun bluRadar 80% - 105%",
+   "rendah": 0.4555555555555556,
+   "tinggi": 0.544368858654573,
+   "rentang": 0.08881330309901736
+  },
+  {
+   "faktor": "Teknologi Rp600 jt - Rp300 jt",
+   "rendah": 0.4666666666666667,
+   "tinggi": 0.5619047619047619,
+   "rentang": 0.09523809523809523
+  },
+  {
+   "faktor": "Insentif bluRadar Rp25 rb - Rp10 rb",
+   "rendah": 0.4444444444444444,
+   "tinggi": 0.573015873015873,
+   "rentang": 0.12857142857142856
+  },
+  {
+   "faktor": "Insentif baseline Rp40 rb - Rp60 rb",
+   "rendah": 0.45185185185185184,
+   "tinggi": 0.5888888888888889,
+   "rentang": 0.13703703703703707
+  },
+  {
+   "faktor": "Tingkat QAC baseline 25% - 35%",
+   "rendah": 0.6084656084656084,
+   "tinggi": 0.45185185185185184,
+   "rentang": 0.15661375661375654
+  },
+  {
+   "faktor": "Tingkat QAC bluRadar 40% - 60%",
+   "rendah": 0.42341269841269835,
+   "tinggi": 0.6013227513227513,
+   "rentang": 0.1779100529100529
+  }
+ ],
+ "projection": [
+  {
+   "skenario": "Konservatif",
+   "npv_inkremental": 33713236796.23365,
+   "roi_terhadap_teknologi": 7.299376902520127,
+   "payback_bulan": 6.0,
+   "tambahan_qac_36bln": 28800.0,
+   "tambahan_dpk_bulan36": 539597065081.4125,
+   "tambahan_dpk_vs_dpk_blu": 0.034589555453936695
+  },
+  {
+   "skenario": "Dasar",
+   "npv_inkremental": 48494168309.016396,
+   "roi_terhadap_teknologi": 10.499650751461015,
+   "payback_bulan": 6.0,
+   "tambahan_qac_36bln": 144000.0,
+   "tambahan_dpk_bulan36": 1023813804657.3282,
+   "tambahan_dpk_vs_dpk_blu": 0.06562909004213642
+  },
+  {
+   "skenario": "Optimis",
+   "npv_inkremental": 57840899271.46123,
+   "roi_terhadap_teknologi": 12.523345851213687,
+   "payback_bulan": 6.0,
+   "tambahan_qac_36bln": 222480.0,
+   "tambahan_dpk_bulan36": 1304576581386.294,
+   "tambahan_dpk_vs_dpk_blu": 0.08362670393501884
+  }
+ ],
+ "pilot_table": [
+  {
+   "Komponen": "Akun dibuka",
+   "Baseline (promo)": "27.000",
+   "bluRadar": "27.000"
+  },
+  {
+   "Komponen": "Tingkat QAC",
+   "Baseline (promo)": "30%",
+   "bluRadar": "50%"
+  },
+  {
+   "Komponen": "Jumlah QAC",
+   "Baseline (promo)": "8.100",
+   "bluRadar": "13.500"
+  },
+  {
+   "Komponen": "Insentif akuisisi",
+   "Baseline (promo)": "Rp1,35 M",
+   "bluRadar": "Rp405,00 jt"
+  },
+  {
+   "Komponen": "Biaya sales",
+   "Baseline (promo)": "Rp540,00 jt",
+   "bluRadar": "Rp540,00 jt"
+  },
+  {
+   "Komponen": "Bonus QAC",
+   "Baseline (promo)": "Rp0",
+   "bluRadar": "Rp135,00 jt"
+  },
+  {
+   "Komponen": "Teknologi",
+   "Baseline (promo)": "Rp0",
+   "bluRadar": "Rp400,00 jt"
+  },
+  {
+   "Komponen": "Total biaya",
+   "Baseline (promo)": "Rp1,89 M",
+   "bluRadar": "Rp1,48 M"
+  },
+  {
+   "Komponen": "Biaya per QAC",
+   "Baseline (promo)": "Rp233,3 rb",
+   "bluRadar": "Rp109,6 rb"
+  }
+ ],
+ "overpass": {
+  "tiles_total": 9,
+  "tiles_ok": 1,
+  "tile_ok": "1,1",
+  "bbox_ok": {
+   "south": -6.46,
+   "north": -6.27,
+   "west": 106.7333,
+   "east": 106.9167
+  },
+  "area": "Jakarta Selatan dan Jakarta Timur bagian selatan, Depok"
+ },
+ "reviews_meta": {
+  "banks_scraped": [
+   "blu",
+   "SeaBank",
+   "Bank Jago"
+  ],
+  "excluded": "Bank Saqu (app ID tidak sesuai, 4 ulasan)",
+  "not_found": [
+   "Superbank",
+   "Allo Bank",
+   "Krom Bank"
+  ],
+  "total_clean": 8726,
+  "with_aspect": 0.258,
+  "ols_r2": 0.29,
+  "topic_docs": 670,
+  "topic_outlier": 0.172
+ }
+}

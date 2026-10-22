@@ -1,0 +1,23 @@
+{
+  "name": "bluradar-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototype Dashboard bluRadar - Tim Ingfo Intern, MarkUp Mini Case Competition 2026 x blu by BCA Digital",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "verify": "node scripts/verify-numbers.mjs"
+  },
+  "dependencies": {
+    "h3-js": "4.1.0",
+    "leaflet": "1.9.4",
+    "lucide-react": "0.468.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-leaflet": "4.2.1",
+    "recharts": "2.15.4"
+  },
+  "engines": { "node": ">=18.17" }
+}

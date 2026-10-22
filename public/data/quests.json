@@ -1,0 +1,62 @@
+{
+  "quests": [
+    {
+      "Kode": "Q1",
+      "Misi": "Aktifkan bluGenie",
+      "Pemicu": "Hari 1",
+      "Reward": "bluPoin + badge",
+      "Pendana reward": "-",
+      "KPI": "Adopsi bluGenie"
+    },
+    {
+      "Kode": "Q2",
+      "Misi": "Autodebit bluSaving di hari gajian",
+      "Pemicu": "Hari 3",
+      "Reward": "Voucher kopi",
+      "Pendana reward": "Mitra FnB (Kopi Kenangan, dll.)",
+      "KPI": "Saldo dan autodebit aktif"
+    },
+    {
+      "Kode": "Q3",
+      "Misi": "Bayar QRIS 3 kali di mitra",
+      "Pemicu": "Hari 7",
+      "Reward": "Diskon mitra",
+      "Pendana reward": "Mitra FnB dan groceries",
+      "KPI": "Frekuensi transaksi"
+    },
+    {
+      "Kode": "Q4",
+      "Misi": "Buat bluGether dan undang 3 teman",
+      "Pemicu": "Hari 10",
+      "Reward": "Perk komunitas",
+      "Pendana reward": "Mitra lifestyle (CGV, GOFIT)",
+      "KPI": "Member baru per Creator"
+    },
+    {
+      "Kode": "Q5",
+      "Misi": "Kelas literasi mini 10 menit",
+      "Pemicu": "Hari 14",
+      "Reward": "bluPoin + sertifikat",
+      "Pendana reward": "bluAcademy",
+      "KPI": "Literasi dan retensi"
+    },
+    {
+      "Kode": "Q6",
+      "Misi": "Squad challenge antartower atau antarkampus",
+      "Pemicu": "Mingguan",
+      "Reward": "Event komunitas",
+      "Pendana reward": "Mitra event dan kampus",
+      "KPI": "QAC per komunitas"
+    },
+    {
+      "Kode": "Q7",
+      "Misi": "Naik ke tier bluPro",
+      "Pemicu": "Hari 30",
+      "Reward": "Benefit tier (kuota transfer lebih besar)",
+      "Pendana reward": "Benefit tier blu yang sudah ada",
+      "KPI": "Laju naik tier"
+    }
+  ],
+  "partner_value": "Mitra mendapat pengunjung baru dengan biaya rendah; blu mendapat reward tanpa membebani kas",
+  "label_data": "Konsep"
+}

@@ -1,0 +1,490 @@
+{
+  "summary": [
+    {
+      "bank": "SeaBank",
+      "app_id": "id.co.bankbkemobile.digitalbank",
+      "n_ulasan": 2870,
+      "rating_rata2": 4.629268,
+      "porsi_negatif": 0.067596,
+      "porsi_positif": 0.909059,
+      "mulai": "2026-10-16 15:19:50",
+      "sampai": "2026-10-21 20:39:07"
+    },
+    {
+      "bank": "Bank Saqu",
+      "app_id": "id.co.bjj.mobiletoken",
+      "n_ulasan": 4,
+      "rating_rata2": 4.0,
+      "porsi_negatif": 0.25,
+      "porsi_positif": 0.75,
+      "mulai": "2026-08-28 17:36:08",
+      "sampai": "2026-09-25 15:07:22"
+    },
+    {
+      "bank": "blu",
+      "app_id": "com.bcadigital.blu",
+      "n_ulasan": 2928,
+      "rating_rata2": 3.968579,
+      "porsi_negatif": 0.228825,
+      "porsi_positif": 0.721995,
+      "mulai": "2026-04-04 18:47:36",
+      "sampai": "2026-10-21 20:09:58"
+    },
+    {
+      "bank": "Bank Jago",
+      "app_id": "com.jago.digitalBanking",
+      "n_ulasan": 2924,
+      "rating_rata2": 3.718878,
+      "porsi_negatif": 0.300274,
+      "porsi_positif": 0.662791,
+      "mulai": "2026-08-07 11:11:59",
+      "sampai": "2026-10-21 19:20:56"
+    }
+  ],
+  "aspects": [
+    {
+      "bank": "Bank Jago",
+      "aspek": "Onboarding & verifikasi",
+      "n_menyebut": 168,
+      "porsi_menyebut": 0.057456,
+      "net_sentiment": -64.285714,
+      "rating_rata2": 1.75
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Promo & cashback",
+      "n_menyebut": 54,
+      "porsi_menyebut": 0.018468,
+      "net_sentiment": 72.222222,
+      "rating_rata2": 4.425926
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Biaya & transfer",
+      "n_menyebut": 216,
+      "porsi_menyebut": 0.073871,
+      "net_sentiment": -4.62963,
+      "rating_rata2": 2.930556
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Error & performa",
+      "n_menyebut": 215,
+      "porsi_menyebut": 0.073529,
+      "net_sentiment": -26.511628,
+      "rating_rata2": 2.506977
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Login & akses akun",
+      "n_menyebut": 218,
+      "porsi_menyebut": 0.074555,
+      "net_sentiment": -58.715596,
+      "rating_rata2": 1.862385
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Layanan CS",
+      "n_menyebut": 127,
+      "porsi_menyebut": 0.043434,
+      "net_sentiment": -79.527559,
+      "rating_rata2": 1.472441
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Tabungan & bunga",
+      "n_menyebut": 130,
+      "porsi_menyebut": 0.04446,
+      "net_sentiment": 53.076923,
+      "rating_rata2": 4.053846
+    },
+    {
+      "bank": "Bank Jago",
+      "aspek": "Keamanan & penipuan",
+      "n_menyebut": 78,
+      "porsi_menyebut": 0.026676,
+      "net_sentiment": 34.615385,
+      "rating_rata2": 3.730769
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Onboarding & verifikasi",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Promo & cashback",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Biaya & transfer",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Error & performa",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Login & akses akun",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Layanan CS",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Tabungan & bunga",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "Bank Saqu",
+      "aspek": "Keamanan & penipuan",
+      "n_menyebut": 0,
+      "porsi_menyebut": 0.0,
+      "net_sentiment": null,
+      "rating_rata2": null
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Onboarding & verifikasi",
+      "n_menyebut": 35,
+      "porsi_menyebut": 0.012195,
+      "net_sentiment": -20.0,
+      "rating_rata2": 2.714286
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Promo & cashback",
+      "n_menyebut": 19,
+      "porsi_menyebut": 0.00662,
+      "net_sentiment": 57.894737,
+      "rating_rata2": 4.157895
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Biaya & transfer",
+      "n_menyebut": 183,
+      "porsi_menyebut": 0.063763,
+      "net_sentiment": 83.060109,
+      "rating_rata2": 4.612022
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Error & performa",
+      "n_menyebut": 32,
+      "porsi_menyebut": 0.01115,
+      "net_sentiment": -3.125,
+      "rating_rata2": 2.96875
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Login & akses akun",
+      "n_menyebut": 44,
+      "porsi_menyebut": 0.015331,
+      "net_sentiment": -59.090909,
+      "rating_rata2": 1.931818
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Layanan CS",
+      "n_menyebut": 15,
+      "porsi_menyebut": 0.005226,
+      "net_sentiment": -73.333333,
+      "rating_rata2": 1.6
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Tabungan & bunga",
+      "n_menyebut": 38,
+      "porsi_menyebut": 0.01324,
+      "net_sentiment": 65.789474,
+      "rating_rata2": 4.315789
+    },
+    {
+      "bank": "SeaBank",
+      "aspek": "Keamanan & penipuan",
+      "n_menyebut": 103,
+      "porsi_menyebut": 0.035889,
+      "net_sentiment": 80.582524,
+      "rating_rata2": 4.563107
+    },
+    {
+      "bank": "blu",
+      "aspek": "Onboarding & verifikasi",
+      "n_menyebut": 226,
+      "porsi_menyebut": 0.077186,
+      "net_sentiment": -69.469027,
+      "rating_rata2": 1.681416
+    },
+    {
+      "bank": "blu",
+      "aspek": "Promo & cashback",
+      "n_menyebut": 43,
+      "porsi_menyebut": 0.014686,
+      "net_sentiment": 69.767442,
+      "rating_rata2": 4.372093
+    },
+    {
+      "bank": "blu",
+      "aspek": "Biaya & transfer",
+      "n_menyebut": 236,
+      "porsi_menyebut": 0.080601,
+      "net_sentiment": 44.067797,
+      "rating_rata2": 3.84322
+    },
+    {
+      "bank": "blu",
+      "aspek": "Error & performa",
+      "n_menyebut": 295,
+      "porsi_menyebut": 0.100751,
+      "net_sentiment": -39.322034,
+      "rating_rata2": 2.274576
+    },
+    {
+      "bank": "blu",
+      "aspek": "Login & akses akun",
+      "n_menyebut": 173,
+      "porsi_menyebut": 0.059085,
+      "net_sentiment": -57.225434,
+      "rating_rata2": 1.942197
+    },
+    {
+      "bank": "blu",
+      "aspek": "Layanan CS",
+      "n_menyebut": 52,
+      "porsi_menyebut": 0.01776,
+      "net_sentiment": -36.538462,
+      "rating_rata2": 2.346154
+    },
+    {
+      "bank": "blu",
+      "aspek": "Tabungan & bunga",
+      "n_menyebut": 87,
+      "porsi_menyebut": 0.029713,
+      "net_sentiment": 54.022989,
+      "rating_rata2": 4.114943
+    },
+    {
+      "bank": "blu",
+      "aspek": "Keamanan & penipuan",
+      "n_menyebut": 80,
+      "porsi_menyebut": 0.027322,
+      "net_sentiment": 77.5,
+      "rating_rata2": 4.525
+    }
+  ],
+  "topics_blu": [
+    {
+      "topik": 0,
+      "kata_kunci": "bca, saldo, transaksi, rekening, transfer, uang, lain",
+      "jumlah": 153,
+      "label": "Transfer dan saldo bermasalah",
+      "porsi_ulasan_negatif": 0.228358,
+      "tema": "Transaksi"
+    },
+    {
+      "topik": 1,
+      "kata_kunci": "update, lemot, makin, sering, keluar, berat, lama",
+      "jumlah": 133,
+      "label": "Aplikasi makin lambat dan keluar sendiri setelah update",
+      "porsi_ulasan_negatif": 0.198507,
+      "tema": "Performa aplikasi"
+    },
+    {
+      "topik": 2,
+      "kata_kunci": "daftar, ribet, masuk, no, bca, lemot, susah",
+      "jumlah": 123,
+      "label": "Pendaftaran akun ribet dan kode tidak masuk",
+      "porsi_ulasan_negatif": 0.183582,
+      "tema": "Akses dan identitas"
+    },
+    {
+      "topik": 3,
+      "kata_kunci": "login, password, cs, reset, akun, malah, susah",
+      "jumlah": 62,
+      "label": "Gagal login atau reset password, CS kurang membantu",
+      "porsi_ulasan_negatif": 0.092537,
+      "tema": "Akses dan identitas"
+    },
+    {
+      "topik": 4,
+      "kata_kunci": "wajah, verifikasi, verifikasi wajah, susah, gagal, wajah susah, pengenalan wajah",
+      "jumlah": 59,
+      "label": "Verifikasi wajah sering gagal",
+      "porsi_ulasan_negatif": 0.08806,
+      "tema": "Akses dan identitas"
+    },
+    {
+      "topik": 5,
+      "kata_kunci": "hp, wajah, login, verifikasi, no, ganti hp, no hp",
+      "jumlah": 25,
+      "label": "Ganti HP harus verifikasi ulang",
+      "porsi_ulasan_negatif": 0.037313,
+      "tema": "Akses dan identitas"
+    }
+  ],
+  "monthly": [
+    {
+      "bank": "Bank Jago",
+      "bulan": "2026-08",
+      "n": 947,
+      "rating": 3.757128,
+      "keluhan_onboarding": 0.057022
+    },
+    {
+      "bank": "Bank Jago",
+      "bulan": "2026-09",
+      "n": 1243,
+      "rating": 3.684634,
+      "keluhan_onboarding": 0.060338
+    },
+    {
+      "bank": "Bank Jago",
+      "bulan": "2026-10",
+      "n": 734,
+      "rating": 3.72752,
+      "keluhan_onboarding": 0.053134
+    },
+    {
+      "bank": "SeaBank",
+      "bulan": "2026-10",
+      "n": 2870,
+      "rating": 4.629268,
+      "keluhan_onboarding": 0.012195
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-04",
+      "n": 422,
+      "rating": 3.966825,
+      "keluhan_onboarding": 0.066351
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-05",
+      "n": 391,
+      "rating": 3.877238,
+      "keluhan_onboarding": 0.092072
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-06",
+      "n": 453,
+      "rating": 4.187638,
+      "keluhan_onboarding": 0.055188
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-07",
+      "n": 503,
+      "rating": 3.799205,
+      "keluhan_onboarding": 0.077535
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-08",
+      "n": 433,
+      "rating": 3.856813,
+      "keluhan_onboarding": 0.080831
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-09",
+      "n": 424,
+      "rating": 4.063679,
+      "keluhan_onboarding": 0.082547
+    },
+    {
+      "bank": "blu",
+      "bulan": "2026-10",
+      "n": 302,
+      "rating": 4.069536,
+      "keluhan_onboarding": 0.092715
+    }
+  ],
+  "drivers": [
+    {
+      "aspek": "Onboarding & verifikasi",
+      "koefisien": -1.757173,
+      "ci_low": -1.913788,
+      "ci_high": -1.600558,
+      "p_value": 0.0
+    },
+    {
+      "aspek": "Layanan CS",
+      "koefisien": -1.663989,
+      "ci_low": -1.893627,
+      "ci_high": -1.43435,
+      "p_value": 0.0
+    },
+    {
+      "aspek": "Login & akses akun",
+      "koefisien": -1.534364,
+      "ci_low": -1.696772,
+      "ci_high": -1.371956,
+      "p_value": 0.0
+    },
+    {
+      "aspek": "Error & performa",
+      "koefisien": -1.267468,
+      "ci_low": -1.416041,
+      "ci_high": -1.118895,
+      "p_value": 0.0
+    },
+    {
+      "aspek": "Biaya & transfer",
+      "koefisien": -0.358841,
+      "ci_low": -0.482363,
+      "ci_high": -0.235318,
+      "p_value": 0.0
+    },
+    {
+      "aspek": "Tabungan & bunga",
+      "koefisien": 0.155569,
+      "ci_low": -0.016939,
+      "ci_high": 0.328077,
+      "p_value": 0.077143
+    },
+    {
+      "aspek": "Promo & cashback",
+      "koefisien": 0.214572,
+      "ci_low": -0.030782,
+      "ci_high": 0.459927,
+      "p_value": 0.086517
+    },
+    {
+      "aspek": "Keamanan & penipuan",
+      "koefisien": 0.22792,
+      "ci_low": 0.084682,
+      "ci_high": 0.371157,
+      "p_value": 0.001817
+    }
+  ],
+  "label_data": "Data Publik: ulasan Google Play Store"
+}

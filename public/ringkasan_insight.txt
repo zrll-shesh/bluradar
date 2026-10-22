@@ -1,0 +1,16 @@
+[Data Kasus] 6 dari 8 bank digital pesaing ditopang aplikasi konsumen induk; aset blu 39,3% dari SeaBank.
+[Data Kasus] 76% nasabah blu berusia < 35 tahun, 64% karyawan swasta atau pelajar/mahasiswa, 70% di tiga wilayah.
+[Data Publik] Aspek paling sering dibahas di ulasan blu: Error & performa.
+[Data Publik] Net sentiment blu paling tertinggal dari rata-rata pesaing di aspek Onboarding & verifikasi (-27,3 poin).
+[Data Publik] Driver penurun rating terbesar (signifikan): Onboarding & verifikasi (-1,76 bintang).
+[Data Publik] Topik keluhan terbesar blu: Transfer dan saldo bermasalah (22,8% ulasan negatif).
+[Data Publik] Radar memetakan 2.188 titik ke 428 heksagon; 11 dari 20 lokasi prioritas tetap top-20 di >= 80% skenario bobot.
+[Simulasi] Thompson Sampling kontekstual menghasilkan QAC +9,7% dibanding alokasi intuisi dan menangkap 94,1% potensi Oracle.
+[Data Kasus + Asumsi] LTV 36 bulan per akun baru naik dari Rp151,4 rb ke Rp323,3 rb; peluang tambahan LTV positif 95,2%.
+[Data Publik Hillstrom] Model S-learner menangkap 49,4% efek nudge hanya dengan menargetkan 30% teratas (Qini gain 35,9% di atas acak).
+[Data Publik + Asumsi] Dengan anggaran nudge untuk 30% nasabah, model uplift menghasilkan 1,64x tambahan aktivasi dibanding pemilihan acak.
+[Simulasi + Asumsi] Satu bendahara membawa rata-rata 7,3 akun baru; pitch bendahara 2,3x lebih produktif per jam.
+[Asumsi] Pilot 12 minggu: biaya per QAC Rp233,3 rb -> Rp109,6 rb (turun 53,0%).
+[Simulasi] Monte Carlo: median penurunan 47,5%, peluang lolos go/no-go 25% sebesar 93,7%.
+[Asumsi] Proyeksi dasar 3 tahun: NPV inkremental Rp48,49 M, payback bulan 6, tambahan DPK Rp1,02 T (6,56% DPK blu).
+[Simulasi] Desain evaluasi: pilot mendeteksi kenaikan QAC minimal 4 pp dengan power 80%; DiD memulihkan efek +11,0 pp (sebenarnya +12 pp).

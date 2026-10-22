@@ -1,0 +1,125 @@
+{
+  "roadmap": [
+    {
+      "fase": "0. Fondasi",
+      "waktu": "Bulan 1",
+      "aktivitas": "Definisi QAC, kode referral per sales, persona berbasis aturan, alur consent UU PDP",
+      "kpi_target": "Tracking QAC berjalan 100%",
+      "go_no_go": "Data akuisisi tersambung ke event aplikasi"
+    },
+    {
+      "fase": "1. Pilot",
+      "waktu": "Bulan 2-4",
+      "aktivitas": "Jabodetabek, Tower Activity + kampus, A/B squad bluRadar vs kontrol, bandit mingguan",
+      "kpi_target": "Biaya per QAC turun >= 25%, QAC 50%",
+      "go_no_go": "Lolos uji DiD dan biaya per QAC"
+    },
+    {
+      "fase": "2. Skala",
+      "waktu": "Bulan 5-10",
+      "aktivitas": "Jawa Barat dan Jawa Timur, model dilatih ulang dengan data pilot, perluasan mitra",
+      "kpi_target": "Retensi D90 dan laju naik tier di atas kontrol",
+      "go_no_go": "Efek bertahan di wilayah baru"
+    },
+    {
+      "fase": "3. Berkelanjutan",
+      "waktu": "Bulan 11-18",
+      "aktivitas": "Sulawesi Selatan dan Bali, program komunitas permanen, model terus belajar",
+      "kpi_target": "Program mandiri dengan ROI positif",
+      "go_no_go": "-"
+    }
+  ],
+  "kpis": [
+    {
+      "dimensi": "Efisiensi akuisisi",
+      "kpi": "Biaya per QAC; QAC per jam sales"
+    },
+    {
+      "dimensi": "Kualitas engagement",
+      "kpi": "Aktivasi D30; produk per nasabah; adopsi bluGenie, bluSaving, bluGether"
+    },
+    {
+      "dimensi": "Kepuasan",
+      "kpi": "CSAT setelah onboarding; skor sentimen ulasan"
+    },
+    {
+      "dimensi": "Loyalitas",
+      "kpi": "Retensi D90; laju naik tier Newbie ke Pro"
+    }
+  ],
+  "risks": [
+    {
+      "risiko": "Privasi data (UU PDP)",
+      "kemungkinan": 3,
+      "dampak": 5,
+      "mitigasi": "Consent eksplisit di kuis, minimisasi data, review tim kepatuhan",
+      "skor": 15
+    },
+    {
+      "risiko": "Sales mengakali QAC",
+      "kemungkinan": 3,
+      "dampak": 4,
+      "mitigasi": "Ambang transaksi, deteksi anomali, audit acak",
+      "skor": 12
+    },
+    {
+      "risiko": "Volume akun turun tanpa promo besar",
+      "kemungkinan": 3,
+      "dampak": 3,
+      "mitigasi": "Bendahara-First, pitch berbasis kebutuhan, diuji di Monte Carlo",
+      "skor": 9
+    },
+    {
+      "risiko": "Cold start model",
+      "kemungkinan": 4,
+      "dampak": 2,
+      "mitigasi": "Mulai dengan aturan dan skor Radar, beralih ke ML setelah pilot",
+      "skor": 8
+    },
+    {
+      "risiko": "Bias model antarwilayah",
+      "kemungkinan": 2,
+      "dampak": 4,
+      "mitigasi": "Cek rasio dampak, guardrail kuota, penjelasan model",
+      "skor": 8
+    },
+    {
+      "risiko": "Mitra mundur",
+      "kemungkinan": 2,
+      "dampak": 3,
+      "mitigasi": "Portofolio mitra beragam, nilai traffic yang terukur bagi mitra",
+      "skor": 6
+    },
+    {
+      "risiko": "Kanibalisasi BCA",
+      "kemungkinan": 2,
+      "dampak": 3,
+      "mitigasi": "Fokus segmen muda dan komunitas sesuai positioning beda segmen",
+      "skor": 6
+    },
+    {
+      "risiko": "Cakupan OSM tidak lengkap",
+      "kemungkinan": 4,
+      "dampak": 2,
+      "mitigasi": "Bandit memperbarui skor dari hasil lapangan",
+      "skor": 8
+    }
+  ],
+  "evaluation": {
+    "design": "A/B berbasis lokasi + difference-in-differences",
+    "power": {
+      "n_cluster": 7528.35481,
+      "clusters": 51.0,
+      "pilot_per_arm": 13500.0,
+      "mde80": 0.04,
+      "DE": 5.47
+    },
+    "did": {
+      "true": 0.12,
+      "est": 0.110083,
+      "ci_low": 0.095447,
+      "ci_high": 0.124719
+    }
+  },
+  "label_data": "Konsep + Simulasi"
+}

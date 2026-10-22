@@ -1,0 +1,119 @@
+{
+  "north_star": "QAC (Qualified Active Customer)",
+  "pilot": {
+    "cost_per_qac_base": 233333.333333,
+    "cost_per_qac_radar": 109629.62963,
+    "reduction": 0.530159,
+    "qac_base": 8100.0,
+    "qac_radar": 13500.0,
+    "accounts": 27000
+  },
+  "montecarlo": {
+    "p5": 0.229868,
+    "p50": 0.47523,
+    "p95": 0.64297,
+    "p_go": 0.9374,
+    "p_pos": 0.9967
+  },
+  "projection_base": {
+    "npv_inkremental": 48494168309.016396,
+    "roi_terhadap_teknologi": 10.499651,
+    "payback_bulan": 6,
+    "tambahan_qac_36bln": 144000.0,
+    "tambahan_dpk_bulan36": 1023813804657.3282,
+    "tambahan_dpk_vs_dpk_blu": 0.065629
+  },
+  "bandit": {
+    "ts_vs_intuisi": 0.096578,
+    "ts_oracle_share": 0.941239,
+    "ts_win_rate": 0.896667,
+    "random_vs_intuisi": -0.234695,
+    "arms_label": "Top-20 lokasi Radar (Data Publik OSM)"
+  },
+  "markov": {
+    "ltv_base": 151422.279173,
+    "ltv_radar": 323345.055412,
+    "v_activation": 138656.397109,
+    "active_36_base": 0.426757,
+    "active_36_radar": 0.657745,
+    "diff_p5": 6459.369979,
+    "diff_p50": 166442.377907,
+    "diff_p95": 340754.574065,
+    "diff_pos": 0.952
+  },
+  "uplift": {
+    "best": "S-learner",
+    "ate_pp": 4.511387,
+    "qini_gain": 0.359136,
+    "capture_top30": 0.494132,
+    "top_decile_pp": 9.620561,
+    "bottom_decile_pp": 0.352855,
+    "budget_mult": 1.638834,
+    "opt_frac": 0.929966,
+    "cost_saving": 0.061715,
+    "keep_effect": 1.033104,
+    "profit_lift": 3621910.555109,
+    "segments": {
+      "Persuadable": 0.498673,
+      "Sure thing": 0.106184,
+      "Lost cause": 0.253748,
+      "Sleeping dog": 0.141396
+    }
+  },
+  "anchor": {
+    "accounts_per_anchor": 7.3283,
+    "direct": 5.68785,
+    "chain_share": 0.087394,
+    "R": 0.102381,
+    "productivity_ratio": 2.279916,
+    "indiv_per_hour": 1.5,
+    "anchor_per_hour": 3.419873
+  },
+  "radar": {
+    "n_poi": 2188,
+    "n_hex": 428,
+    "stability_mean": 0.7997,
+    "stable_80": 11,
+    "share_top5pct": 0.129451,
+    "top3": [
+      "Telkom Pasar Rebo; KPP Pratama Jakarta Pasar Rebo; Kantor RW 05",
+      "Pevent Group; Branz Simatupang Marketing Gallery; LogID",
+      "childFund Indonesia; Indosat M2; Kementerian Pertanian"
+    ],
+    "top_categories": {
+      "kantor": 20
+    }
+  },
+  "competitors": {
+    "n_with_app_parent": 6,
+    "n_total": 8,
+    "blu_vs_seabank": 0.392864
+  },
+  "insights": [
+    "[Data Kasus] 6 dari 8 bank digital pesaing ditopang aplikasi konsumen induk; aset blu 39,3% dari SeaBank.",
+    "[Data Kasus] 76% nasabah blu berusia < 35 tahun, 64% karyawan swasta atau pelajar/mahasiswa, 70% di tiga wilayah.",
+    "[Data Publik] Aspek paling sering dibahas di ulasan blu: Error & performa.",
+    "[Data Publik] Net sentiment blu paling tertinggal dari rata-rata pesaing di aspek Onboarding & verifikasi (-27,3 poin).",
+    "[Data Publik] Driver penurun rating terbesar (signifikan): Onboarding & verifikasi (-1,76 bintang).",
+    "[Data Publik] Topik keluhan terbesar blu: Transfer dan saldo bermasalah (22,8% ulasan negatif).",
+    "[Data Publik] Radar memetakan 2.188 titik ke 428 heksagon; 11 dari 20 lokasi prioritas tetap top-20 di >= 80% skenario bobot.",
+    "[Simulasi] Thompson Sampling kontekstual menghasilkan QAC +9,7% dibanding alokasi intuisi dan menangkap 94,1% potensi Oracle.",
+    "[Data Kasus + Asumsi] LTV 36 bulan per akun baru naik dari Rp151,4 rb ke Rp323,3 rb; peluang tambahan LTV positif 95,2%.",
+    "[Data Publik Hillstrom] Model S-learner menangkap 49,4% efek nudge hanya dengan menargetkan 30% teratas (Qini gain 35,9% di atas acak).",
+    "[Data Publik + Asumsi] Dengan anggaran nudge untuk 30% nasabah, model uplift menghasilkan 1,64x tambahan aktivasi dibanding pemilihan acak.",
+    "[Simulasi + Asumsi] Satu bendahara membawa rata-rata 7,3 akun baru; pitch bendahara 2,3x lebih produktif per jam.",
+    "[Asumsi] Pilot 12 minggu: biaya per QAC Rp233,3 rb -> Rp109,6 rb (turun 53,0%).",
+    "[Simulasi] Monte Carlo: median penurunan 47,5%, peluang lolos go/no-go 25% sebesar 93,7%.",
+    "[Asumsi] Proyeksi dasar 3 tahun: NPV inkremental Rp48,49 M, payback bulan 6, tambahan DPK Rp1,02 T (6,56% DPK blu).",
+    "[Simulasi] Desain evaluasi: pilot mendeteksi kenaikan QAC minimal 4 pp dengan power 80%; DiD memulihkan efek +11,0 pp (sebenarnya +12 pp)."
+  ],
+  "status": {
+    "B_ulasan": true,
+    "B_validasi_sentimen": true,
+    "B_topik": true,
+    "C_radar": true,
+    "D_bandit": true,
+    "F_uplift": true
+  },
+  "generated_at": "2026-10-22T21:15:53"
+}

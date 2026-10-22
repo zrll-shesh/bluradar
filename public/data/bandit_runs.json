@@ -1,0 +1,477 @@
+{
+  "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "squads": 8,
+  "n_sim": 300,
+  "arms_label": "Top-20 lokasi Radar (Data Publik OSM)",
+  "mean_cumulative_qac": {
+    "Acak": [
+      576.274674,
+      1155.734113,
+      1732.432123,
+      2491.605613,
+      3074.154445,
+      3657.014612,
+      4240.856533,
+      4997.730534,
+      5583.372203,
+      6167.472285,
+      6743.07196,
+      7491.173684
+    ],
+    "Intuisi (skor statis)": [
+      758.797379,
+      1517.594759,
+      2276.392138,
+      3262.828731,
+      4021.62611,
+      4780.42349,
+      5539.220869,
+      6525.657462,
+      7284.454841,
+      8043.252221,
+      8802.0496,
+      9788.486193
+    ],
+    "Epsilon-greedy": [
+      738.257425,
+      1511.394047,
+      2309.11404,
+      3361.792388,
+      4180.39289,
+      5000.529983,
+      5826.487251,
+      6900.378234,
+      7732.77688,
+      8567.95753,
+      9404.218267,
+      10494.35993
+    ],
+    "Thompson Sampling kontekstual": [
+      666.869997,
+      1431.601016,
+      2240.094295,
+      3316.974181,
+      4162.819221,
+      5015.981341,
+      5875.321913,
+      6995.240213,
+      7862.25478,
+      8730.554493,
+      9601.868597,
+      10733.841718
+    ],
+    "Oracle": [
+      884.026602,
+      1768.053204,
+      2652.079806,
+      3801.314389,
+      4685.340991,
+      5569.367593,
+      6453.394195,
+      7602.628778,
+      8486.65538,
+      9370.681982,
+      10254.708584,
+      11403.943167
+    ]
+  },
+  "mean_cumulative_regret": {
+    "Acak": [
+      307.751928,
+      612.319091,
+      919.647684,
+      1309.708776,
+      1611.186546,
+      1912.352982,
+      2212.537662,
+      2604.898244,
+      2903.283177,
+      3203.209697,
+      3511.636624,
+      3912.769483
+    ],
+    "Intuisi (skor statis)": [
+      125.229223,
+      250.458446,
+      375.687668,
+      538.485658,
+      663.714881,
+      788.944103,
+      914.173326,
+      1076.971316,
+      1202.200539,
+      1327.429761,
+      1452.658984,
+      1615.456974
+    ],
+    "Epsilon-greedy": [
+      145.769177,
+      256.659157,
+      342.965766,
+      439.522001,
+      504.948101,
+      568.83761,
+      626.906944,
+      702.250543,
+      753.8785,
+      802.724453,
+      850.490317,
+      909.583237
+    ],
+    "Thompson Sampling kontekstual": [
+      217.156605,
+      336.452188,
+      411.985511,
+      484.340208,
+      522.52177,
+      553.386252,
+      578.072282,
+      607.388565,
+      624.400601,
+      640.127489,
+      652.839987,
+      670.101449
+    ]
+  },
+  "summary": [
+    {
+      "strategi": "Acak",
+      "total_qac_rata2": 7491.173684,
+      "p2_5": 5838.963157,
+      "p97_5": 9505.77471,
+      "vs_intuisi": -0.234695,
+      "porsi_oracle": 0.656893,
+      "menang_vs_intuisi": 0.01
+    },
+    {
+      "strategi": "Intuisi (skor statis)",
+      "total_qac_rata2": 9788.486193,
+      "p2_5": 6950.177595,
+      "p97_5": 13446.688462,
+      "vs_intuisi": 0.0,
+      "porsi_oracle": 0.858342,
+      "menang_vs_intuisi": 0.0
+    },
+    {
+      "strategi": "Epsilon-greedy",
+      "total_qac_rata2": 10494.35993,
+      "p2_5": 7724.864513,
+      "p97_5": 13809.278059,
+      "vs_intuisi": 0.072113,
+      "porsi_oracle": 0.92024,
+      "menang_vs_intuisi": 0.893333
+    },
+    {
+      "strategi": "Thompson Sampling kontekstual",
+      "total_qac_rata2": 10733.841718,
+      "p2_5": 7862.285865,
+      "p97_5": 13831.244086,
+      "vs_intuisi": 0.096578,
+      "porsi_oracle": 0.941239,
+      "menang_vs_intuisi": 0.896667
+    },
+    {
+      "strategi": "Oracle",
+      "total_qac_rata2": 11403.943167,
+      "p2_5": 8368.407544,
+      "p97_5": 14546.433079,
+      "vs_intuisi": 0.165036,
+      "porsi_oracle": 1.0,
+      "menang_vs_intuisi": 0.996667
+    }
+  ],
+  "sample_allocation_ts": [
+    {
+      "week": 1,
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "week": 2,
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        17
+      ]
+    },
+    {
+      "week": 3,
+      "ranks": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "week": 4,
+      "ranks": [
+        1,
+        2,
+        3,
+        6,
+        10,
+        11,
+        13,
+        16
+      ]
+    },
+    {
+      "week": 5,
+      "ranks": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        15
+      ]
+    },
+    {
+      "week": 6,
+      "ranks": [
+        1,
+        2,
+        6,
+        8,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "week": 7,
+      "ranks": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        18
+      ]
+    },
+    {
+      "week": 8,
+      "ranks": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        20
+      ]
+    },
+    {
+      "week": 9,
+      "ranks": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "week": 10,
+      "ranks": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        19
+      ]
+    },
+    {
+      "week": 11,
+      "ranks": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "week": 12,
+      "ranks": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "arms": [
+    {
+      "rank": 1,
+      "score": 100.0,
+      "kategori_dominan": "kantor",
+      "lokasi": "Telkom Pasar Rebo; KPP Pratama Jakarta Pasar Rebo; Kantor RW 05"
+    },
+    {
+      "rank": 2,
+      "score": 95.815177,
+      "kategori_dominan": "kantor",
+      "lokasi": "Pevent Group; Branz Simatupang Marketing Gallery; LogID"
+    },
+    {
+      "rank": 3,
+      "score": 88.260502,
+      "kategori_dominan": "kantor",
+      "lokasi": "childFund Indonesia; Indosat M2; Kementerian Pertanian"
+    },
+    {
+      "rank": 4,
+      "score": 87.591842,
+      "kategori_dominan": "kantor",
+      "lokasi": "Graha Al Badegel; Gedung Philips; Suku Dinas Lingkungan Hidup Jakarta Selatan"
+    },
+    {
+      "rank": 5,
+      "score": 86.861394,
+      "kategori_dominan": "kantor",
+      "lokasi": "Kesekretariatan RW 019; Balai Warga RW 17; Kesekretariatan RW 01 Srengseng Sawah"
+    },
+    {
+      "rank": 6,
+      "score": 84.637042,
+      "kategori_dominan": "kantor",
+      "lokasi": "UPPD Kramat Jati; Abang Express - Pengiriman Internasional; PT Blue Bird"
+    },
+    {
+      "rank": 7,
+      "score": 81.843165,
+      "kategori_dominan": "kantor",
+      "lokasi": "PT. Interteknis Suryaterang Operations Office; Balai Pendidikan dan Pelatihan Koperasi, Usaha Mikro, Kecil, dan Menengah, dan Perdagangan; Sekolah Partai DPP PDI Perjuangan"
+    },
+    {
+      "rank": 8,
+      "score": 80.711466,
+      "kategori_dominan": "kantor",
+      "lokasi": "Balai Monitor Spektrum Frekuensi Radio Kelas I Jakarta; Kantor Yayasan; UPT Kebun Bibit Kelapa Dua Wetan"
+    },
+    {
+      "rank": 9,
+      "score": 80.385767,
+      "kategori_dominan": "kantor",
+      "lokasi": "Kantor Lurah Pasar Minggu; Kementerian Pertanian Direktorat Jenderal Tanaman Pangan; Departemen Pertanian Tanaman Pangan"
+    },
+    {
+      "rank": 10,
+      "score": 79.101615,
+      "kategori_dominan": "kantor",
+      "lokasi": "Ruko Graha Depok Mas; Redaksi Majalah KA; Plaza Depok"
+    },
+    {
+      "rank": 11,
+      "score": 78.647315,
+      "kategori_dominan": "kantor",
+      "lokasi": "PT Adhi Commuter Properti; Kantor Camat Cipayung; Sekretariat RW 05"
+    },
+    {
+      "rank": 12,
+      "score": 78.151881,
+      "kategori_dominan": "kantor",
+      "lokasi": "SPSI; Kompas Sirkulasi; Balai RW 011"
+    },
+    {
+      "rank": 13,
+      "score": 76.097384,
+      "kategori_dominan": "kantor",
+      "lokasi": "Astra Credit Companies; Akasha International; Lembaga Penjamin Mutu Pendidikan DKI Jakarta"
+    },
+    {
+      "rank": 14,
+      "score": 72.960686,
+      "kategori_dominan": "kantor",
+      "lokasi": "Kantor Lurah Pekayon; KUA Pasar Rebo; Kantor Sekretariat RW 01"
+    },
+    {
+      "rank": 15,
+      "score": 71.694122,
+      "kategori_dominan": "kantor",
+      "lokasi": "Puslitbang PU Pasar Jumat; Jasa Site Plan; Balai Besar Pelaksanaan Jalan Nasional VI Kementrian PU"
+    },
+    {
+      "rank": 16,
+      "score": 71.033266,
+      "kategori_dominan": "kantor",
+      "lokasi": "Bangunan; Sekretariat RW 06; Sekretariat RW 04"
+    },
+    {
+      "rank": 17,
+      "score": 70.603918,
+      "kategori_dominan": "kantor",
+      "lokasi": "Balai RW 08; Kemenkes RI Balai Besar Pelatihan Kesehatan Jakarta; Balai RW 04"
+    },
+    {
+      "rank": 18,
+      "score": 67.868437,
+      "kategori_dominan": "kantor",
+      "lokasi": "Kantor Kelurahan Pisangan; Kementerian Agama RI Pusat Kementerian Agama RI Pendidikan dan Pelatihan; Pegadaian"
+    },
+    {
+      "rank": 19,
+      "score": 67.082007,
+      "kategori_dominan": "kantor",
+      "lokasi": "OmiqloBadut; Kantor Lurah Lubang Buaya; Kantor Sekretariat RW. 02 Kelurahan Lubang Buaya"
+    },
+    {
+      "rank": 20,
+      "score": 66.184818,
+      "kategori_dominan": "kantor",
+      "lokasi": "PSMP Handayani; Sekretariat TRC Kementerian Sosial Republik Indonesia; Sekretariat Rumah Perlindungan Sosial Anak"
+    }
+  ],
+  "label_data": "Simulasi terkalibrasi"
+}
