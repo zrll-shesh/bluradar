@@ -97,7 +97,7 @@ export default function Radar() {
         <Panel title={changed ? 'Peta Radar dengan bobot buatanmu' : 'Peta Radar: 20 lokasi prioritas'} sub="Warna lebih gelap berarti peluang lebih tinggi. Angka pada pin adalah peringkat. Klik daftar untuk terbang ke lokasi." src={['publik', 'asumsi']}>
           <div className="map-shell">
             <MapContainer bounds={bounds} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
-              <TileLayer attribution='&copy; OpenStreetMap contributors &copy; CARTO' url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
+              <TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" className="osm-tiles" />
               <FitBounds bounds={bounds} />
               <FlyTo target={selected ? [selected.lat, selected.lon] : null} />
               <GeoJSON key={JSON.stringify(wNorm) + sel} data={geo} style={style}
@@ -154,7 +154,7 @@ export default function Radar() {
             </ResponsiveContainer>
           </div>
           <div className="kv">
-            {catCounts.flatMap((c) => [<span key={c.cat + 'k'}>Titik {c.cat.toLowerCase()}</span>, <b key={c.cat + 'v'}>{idNum(c.n)}</b>])}
+            {catCounts.flatMap((c) => [<span key={c.cat + 'k'}>{`Titik ${c.cat.toLowerCase()}`}</span>, <b key={c.cat + 'v'}>{idNum(c.n)}</b>])}
           </div>
         </Panel>
       </section>

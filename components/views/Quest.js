@@ -68,7 +68,7 @@ export default function Quest() {
             <ResponsiveContainer>
               <LineChart data={qini} margin={{ left: 0, right: 12, top: 8 }}>
                 <CartesianGrid stroke="#e3ecef" vertical={false} />
-                <XAxis dataKey="f" type="number" domain={[0, 100]} tick={{ fontSize: 12 }} tickFormatter={(v) => `${v}%`} />
+                <XAxis dataKey="f" type="number" domain={[0, 100]} tick={{ fontSize: 12 }} tickFormatter={(v) => `${Math.round(v)}%`} />
                 <YAxis tick={{ fontSize: 12 }} width={44} />
                 <ReferenceLine x={30} stroke="#0c2230" strokeDasharray="4 4" label={{ value: 'Anggaran 30%', position: 'insideTopLeft', fontSize: 11.5, fill: '#0c2230' }} />
                 <Tooltip content={<TT fmt={(v) => idNum(v, 1)} title={(l) => `${idNum(l, 0)}% nasabah dinudge`} />} />
@@ -167,7 +167,7 @@ export default function Quest() {
               <AreaChart data={area} margin={{ left: -6, right: 10, top: 6 }}>
                 <CartesianGrid stroke="#e3ecef" vertical={false} />
                 <XAxis dataKey="m" tick={{ fontSize: 12 }} tickFormatter={(v) => `B${v}`} interval={5} />
-                <YAxis tick={{ fontSize: 12 }} domain={[0, 100]} tickFormatter={(v) => `${v}%`} />
+                <YAxis tick={{ fontSize: 12 }} domain={[0, 100]} tickFormatter={(v) => `${Math.round(v)}%`} />
                 <Tooltip content={<TT fmt={(v) => `${idNum(v, 1)}%`} title={(l) => `Bulan ${l}`} />} />
                 {M.states.map((s, i) => <Area key={s} type="monotone" dataKey={s} name={s} stackId="1" stroke={TIER_COLOR[i]} fill={TIER_COLOR[i]} fillOpacity={0.95} />)}
               </AreaChart>

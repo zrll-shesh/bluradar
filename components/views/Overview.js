@@ -24,7 +24,7 @@ export default function Overview({ go }) {
   const insights = D.kpi.insights.map(parseInsight);
 
   const story = [
-    ['pasar', 'Masalah', 'Kompetitor punya super-app', '6 dari 8 bank digital pesaing ditopang aplikasi konsumen induk. blu tidak.'],
+    ['pasar', 'Masalah', 'Kompetitor punya super-app', '6 dari 7 pesaing blu ditopang aplikasi konsumen induk. blu tidak.'],
     ['suara', 'Insight', 'Nasabah tersandung di pintu masuk', `${fmtPct(accessShare)} keluhan negatif blu terjadi saat daftar, verifikasi wajah, login, dan ganti HP.`],
     ['radar', 'Solusi', 'RADAR, ANCHOR, QUEST', 'Tim lapangan tahu ke mana turun, siapa didekati, dan bagaimana menjaga nasabah aktif.'],
     ['finansial', 'Bukti', `Biaya per QAC turun ${fmtPct(p.reduction)}`, `${fmtPct(mc.p_go)} dari 10.000 skenario Monte Carlo lolos ambang go/no-go.`],

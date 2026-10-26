@@ -77,10 +77,10 @@ export default function Market() {
         <Panel title="Kesimpulan strategis" read={{
           ringkas: 'SeaBank punya Shopee, Jago punya Gojek, Superbank punya Grab. blu tidak punya aplikasi seperti itu, jadi blu perlu jalan masuk sendiri: komunitas yang didatangi langsung.',
           bisnis: 'Di online, blu harus membeli perhatian lewat iklan dan promo, arena di mana pesaing lebih kuat. Di offline, kekuatan BCA dan jaringan komunitas sulit ditiru. bluRadar menjadikan offline sebagai kanal yang terukur.',
-          teknis: '6 dari 8 bank dengan data aset ditopang aplikasi konsumen induk (Sea Group, GoTo, Grab/Emtek, Akulaku, Kredivo, CT Corp). blu dan Saqu tidak. Sumber: Digital Banks Landscape di materi blu, laporan keuangan publikasi Agustus 2026.',
+          teknis: 'Dari 8 bank digital dengan data aset (termasuk blu), 6 ditopang aplikasi konsumen induk (Sea Group, GoTo, Grab/Emtek, Akulaku, Kredivo, CT Corp); blu dan Saqu tidak. Artinya 6 dari 7 pesaing blu punya mesin akuisisi dari aplikasi induk. Sumber: Digital Banks Landscape di materi blu, laporan keuangan publikasi Agustus 2026.',
         }}>
-          <div className="big-num">6 dari 8</div>
-          <p className="muted">bank digital pesaing ditopang aplikasi konsumen induk sebagai mesin akuisisi.</p>
+          <div className="big-num">6 dari 7</div>
+          <p className="muted">pesaing blu ditopang aplikasi konsumen induk sebagai mesin akuisisi.</p>
           <Callout tone="info" title="Komunitas sebagai super-app blu">Kantor, kampus, organisasi, dan kas bersama adalah tempat calon nasabah sudah berkumpul. bluRadar membuat blu datang ke tempat yang tepat dengan tawaran yang tepat.</Callout>
         </Panel>
       </section>

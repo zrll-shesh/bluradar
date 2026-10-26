@@ -167,7 +167,7 @@ export default function Finance() {
                 <tr><td>QAC dan volume</td><td className="num">40%, 85%</td><td className="num">50%, 100%</td><td className="num">58%, 105%</td></tr>
                 <tr className="hl"><td>NPV inkremental</td>{proj.map((s) => <td key={s.skenario} className="num">{fmtRp(s.npv_inkremental, 2)}</td>)}</tr>
                 <tr><td>ROI terhadap teknologi</td>{proj.map((s) => <td key={s.skenario} className="num">{idNum(s.roi_terhadap_teknologi, 1)}x</td>)}</tr>
-                <tr><td>Payback</td>{proj.map((s) => <td key={s.skenario} className="num">bulan {s.payback_bulan}</td>)}</tr>
+                <tr><td>Payback</td>{proj.map((s) => <td key={s.skenario} className="num">{`bulan ${s.payback_bulan}`}</td>)}</tr>
                 <tr><td>Tambahan QAC 36 bulan</td>{proj.map((s) => <td key={s.skenario} className="num">{idNum(s.tambahan_qac_36bln)}</td>)}</tr>
                 <tr><td>Tambahan DPK bulan 36</td>{proj.map((s) => <td key={s.skenario} className="num">{fmtRp(s.tambahan_dpk_bulan36, 2)}</td>)}</tr>
                 <tr><td>Terhadap DPK blu</td>{proj.map((s) => <td key={s.skenario} className="num">{fmtPct(s.tambahan_dpk_vs_dpk_blu, 2)}</td>)}</tr>

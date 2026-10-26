@@ -1,7 +1,8 @@
 'use client';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { BarChart3, BookOpen, Coins, Compass, Gauge, Map, Menu, MessageSquareText, Route, Users, X, Zap } from 'lucide-react';
+import { BarChart3, BookOpen, Coins, Compass, Gauge, Globe, Map, Menu, MessageSquareText, Route, Users, X, Zap } from 'lucide-react';
+import { LangContext, startTranslation } from './lib/i18n';
 import { ModeContext, Seg } from './ui';
 import Overview from './views/Overview';
 import Market from './views/Market';
@@ -24,6 +25,7 @@ export const NAV = [
 ];
 const FLAT = NAV.flatMap((g) => g.items);
 const MODES = [['ringkas', 'Ringkas'], ['bisnis', 'Bisnis'], ['teknis', 'Teknis']];
+const LANGS = [['id', 'ID'], ['en', 'EN']];
 
 function readHash() {
   if (typeof window === 'undefined') return 'ringkasan';
@@ -35,6 +37,9 @@ export default function Dashboard() {
   const [page, setPage] = useState('ringkasan');
   const [mode, setModeState] = useState('ringkas');
   const [open, setOpen] = useState(false);
+  const [lang, setLangState] = useState('id');
+  const [pending, setPending] = useState(true);
+  const rootRef = useRef(null);
 
   useEffect(() => {
     const apply = () => setPage(readHash());
@@ -43,9 +48,25 @@ export default function Dashboard() {
     try {
       const m = window.localStorage.getItem('bluradar-mode');
       if (MODES.some((x) => x[0] === m)) setModeState(m);
-    } catch (e) {}
+      const l = window.localStorage.getItem('bluradar-lang');
+      if (l === 'en' || l === 'id') setLangState(l);
+      if (l !== 'en') setPending(false);
+    } catch (e) { setPending(false); }
     return () => window.removeEventListener('hashchange', apply);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    if (lang !== 'en' || !rootRef.current) return undefined;
+    const stop = startTranslation(rootRef.current);
+    setPending(false);
+    return stop;
+  }, [lang]);
+
+  const setLang = (l) => {
+    setLangState(l);
+    try { window.localStorage.setItem('bluradar-lang', l); } catch (e) {}
+  };
 
   const setMode = (m) => {
     setModeState(m);
@@ -62,8 +83,9 @@ export default function Dashboard() {
   const props = { go };
 
   return (
+    <LangContext.Provider value={lang}>
     <ModeContext.Provider value={mode}>
-      <div className="app">
+      <div className={pending ? 'app tr-pending' : 'app'} ref={rootRef}>
         <a className="skip" href="#main">Lewati ke konten</a>
         <aside className={open ? 'sidebar open' : 'sidebar'} aria-label="Navigasi">
           <div className="brand">
@@ -93,6 +115,10 @@ export default function Dashboard() {
               <div className="crumb">{current[3]}</div>
             </div>
             <div className="top-actions">
+              <div className="lang-switch" data-no-tr>
+                <Globe size={15} aria-hidden="true" />
+                <Seg options={LANGS} value={lang} onChange={setLang} small label={lang === 'en' ? 'Language' : 'Bahasa'} />
+              </div>
               <span className="mode-label">Penjelasan untuk</span>
               <Seg options={MODES} value={mode} onChange={setMode} label="Mode penjelasan" />
             </div>
@@ -116,5 +142,6 @@ export default function Dashboard() {
         </div>
       </div>
     </ModeContext.Provider>
+    </LangContext.Provider>
   );
 }

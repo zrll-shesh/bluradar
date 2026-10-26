@@ -145,7 +145,7 @@ export default function Voice() {
               <ComposedChart data={monthly} margin={{ left: 0, right: 10, top: 16 }}>
                 <CartesianGrid vertical={false} stroke="#e3ecef" />
                 <XAxis dataKey="label" tick={{ fontSize: 12 }} />
-                <YAxis yAxisId="l" tick={{ fontSize: 12 }} tickFormatter={(v) => `${v}%`} />
+                <YAxis yAxisId="l" tick={{ fontSize: 12 }} tickFormatter={(v) => `${Math.round(v)}%`} />
                 <YAxis yAxisId="r" orientation="right" domain={[3.5, 4.5]} tick={{ fontSize: 12 }} tickFormatter={(v) => idNum(v, 1)} />
                 <Tooltip content={<TT fmt={(v, p) => (p.dataKey === 'onb' ? `${idNum(v, 1)}%` : idNum(v, 2))} />} />
                 <Bar yAxisId="l" dataKey="onb" name="Ulasan bahas onboarding" fill={COLORS.navy} barSize={26} radius={[4, 4, 0, 0]}>
